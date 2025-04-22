@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Chatbot Logo" class="login-logo">
+        <h2>Welcome to Chatbot</h2>
+        <form method="POST">
+            <input type="text" name="username" placeholder="Enter your name" required>
+            <button type="submit">Login</button>
+            {% if error %}
+                <p class="error">{{ error }}</p>
+            {% endif %}
+        </form>
+    </div>
+</body>
+</html>

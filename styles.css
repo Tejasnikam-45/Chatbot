@@ -1,0 +1,48 @@
+/* Login Page Styles */
+.login-page {
+    background: linear-gradient(to right, #f7f7f7, #e2f0cb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.login-container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.login-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login-logo {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: rgb(12, 9, 222);
+    margin-top: 10px;
+}
